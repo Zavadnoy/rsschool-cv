@@ -2,8 +2,8 @@
 
 ### Contacts:
 
-**Phone:** +375 29 *** ** **
-**E-mail:** za******@gmail.com
+-**Phone:** +375 29 *** ** ** <br>
+-**E-mail:** za******@gmail.com
 
 ### Courses:
 
