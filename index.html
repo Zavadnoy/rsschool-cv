@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikalai Zavadski CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+          <nav class="nav">
+            <ul class="nav-list">          
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>          
+              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container main-container">
+          <section class="section section-profile" id="profile">
+            <div class="section-profile-title">
+              <h1 class="section-title main-title">Mikalai Zavadski</h1>
+              <h3 class="section-subtitle">Electronics engineer</h3>
+            </div>
+            <img src="./assets/img/avatarka.jpg" alt="My avatar" class="section-profile-logo">        
+          </section>
+          <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                Vitebsk, Belarus
+              </li>
+              <li class="section-item">
+                Email: <a href="mailto:zavadnoy@gmail.com" title="email">zavadnoy@gmail.com</a>
+              </li>
+              <li class="section-item">
+                Github: <a href="https://github.com/zavadnoy" title="github" target="_blank">zavadnoy</a>
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>
+                My main profession is electronics development. Programming is both a job and a hobby for me. My goal is to create devices and control them over the Internet.
+            </p>
+          </section>
+          <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                Development:<span> C++, Delphi</span>
+              </li>
+              <li class="section-item">
+                CAD:<span> RhinoCeros, AutoCad, Ni Multisim</span>
+              </li>
+              <li class="section-item">
+                CAM:<span> RhinoCAM, PrusaSlicer</span>
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+    <pre class="pre"><code> for I := 0 to ListBox1.Count - 1 do
+        begin
+            exSheet.Rows[I+9].RowHeight := 120;
+            exRng := exSheet.Cells[I+9, 1];
+            exShape := exSheet.Shapes.AddPicture2(ListBox1.Items.Strings[I],
+            LinkToFile:=False, SaveWithDocument:=True, Left:=exRng.Left, Top:=exRng.Top,
+            Width:=120, Height:=120, Compress:= 1);
+            name := ReplaceStr(ExtractFileName(ListBox1.Items.Strings[I]),
+            '_00'+ExtractFileExt (ListBox1.Items.Strings[I]),'');
+            exSheet.Cells[I+9, 2] := name;
+            ProgressBar1.Position := I;
+        end;</code></pre>
+          </section>
+          <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                RS Schools<span> - JS/FE Pre-School 2022Q4</span>
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                <a href="https://zavadnoy.github.io/rsschool-cv/" target="_blank">RSSchool CV</a>
+              </li>
+            </ul>
+          </section>
+          <section class="section section-education" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>Polotsk State University</p>
+          </section>
+          <section class="section section-language" id="language">
+            <h2 class="section-title">Language</h2>
+            <p>English - A1</p>
+            <p>Russian - native</p>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div>© 2022 </div>
+          <div>Github: <a href="https://github.com/zavadnoy" class="github nav-link" target="_blank">Zavadnoy</a></div>
+          <a href="https://rs.school/js/" class="rsschool" target="_blank"></a>
+        </div>
+      </footer>
+</body>
+</html>
